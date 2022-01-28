@@ -1,10 +1,11 @@
 import React from 'react';
-import Solana from './Solana';
+import SplashScreen from './SplashScreen';
 
 function Main() {
   return (
-    //   <Solana />
-    <h1 className='text-5xl font-bold bg-indigo-500'>Hello test!</h1>
+    <div className="md:container md:mx-auto">
+    <SplashScreen />
+    </div>
   );
 }
 

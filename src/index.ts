@@ -13,6 +13,7 @@ if (require('electron-squirrel-startup')) {
 const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    title:"Sorectron",
     titleBarStyle: 'hidden',
     height: 700,
     width: 500,

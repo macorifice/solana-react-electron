@@ -1,12 +1,22 @@
 import React from 'react';
+import {HashRouter,Route,Routes} from "react-router-dom";
+import HomePage from './HomePage';
 import SplashScreen from './SplashScreen';
-
-function Main() {
+    
+const App = ()=> {
+ 
   return (
-    <div className="md:container md:mx-auto">
-    <SplashScreen />
-    </div>
+    <HashRouter>
+      {/* <div className="menu pt-10">
+        <Link to="/"><h2>SplashScreen</h2></Link>
+        <Link to="/home"><h2>HomePage</h2></Link>
+      </div> */}
+      <Routes>
+        <Route path="/" element={<SplashScreen/>}/>
+        <Route path="/home" element={<HomePage/>}/>
+      </Routes>     
+    </HashRouter>    
   );
 }
 
-export default Main;
+export default App;

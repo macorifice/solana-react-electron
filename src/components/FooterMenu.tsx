@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FooterMenu() {
   return (
@@ -23,6 +24,7 @@ function FooterMenu() {
       </div>
       <div className='flex justify-center md:container md:mx-auto p-6 bg-gray-100 rounded-t-full mt-4'>
         <div className='flex justify-center grid grid-rows-1 grid-flow-col gap-24'>
+          <Link to='/home'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -39,6 +41,8 @@ function FooterMenu() {
               />
             </svg>
           </div>
+          </Link>
+          <Link to='/charts'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -55,6 +59,8 @@ function FooterMenu() {
               />
             </svg>
           </div>
+          </Link>
+          <Link to='/history'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -71,6 +77,8 @@ function FooterMenu() {
               />
             </svg>
           </div>
+          </Link>
+          <Link to='/profile'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -87,6 +95,7 @@ function FooterMenu() {
               />
             </svg>
           </div>
+          </Link>
         </div>
       </div>
     </>

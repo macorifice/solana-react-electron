@@ -1,8 +1,11 @@
 import React from 'react';
 import {HashRouter,Route,Routes} from "react-router-dom";
 import Balance from './Balance';
+import Charts from './Charts';
+import History from './History';
 import HomePage from './HomePage';
 import Login from './Login';
+import Profile from './Profile';
 import SplashScreen from './SplashScreen';
     
 const App = ()=> {
@@ -18,6 +21,9 @@ const App = ()=> {
         <Route path="/login" element={<Login/>}/>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/balance" element={<Balance/>}/>
+        <Route path="/charts" element={<Charts/>}/>
+        <Route path="/history" element={<History/>}/>
+        <Route path="/profile" element={<Profile/>}/>
       </Routes>     
     </HashRouter>    
   );

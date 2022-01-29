@@ -26,7 +26,7 @@ function SplashScreen() {
         <div className='flex justify-center'>
           <p className='text-sm text-center text-gray-600 p-2'>{subTitle}</p>
         </div>
-        <Link to='/home'>
+        <Link to='/login'>
           <div className='text-center pt-2'>
             <button className='w-80 h-12 px-8 py-2 mx-auto text-white bg-indigo-500 rounded-full transition duration-500 ease-in-out hover:bg-indigo-600 transform hover:-translate-y-1 animate-bounce'>
               {textButton}

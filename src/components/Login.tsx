@@ -15,7 +15,9 @@ function Login() {
           </Link> */}
           <div className='flex justify-end grid grid-rows-1 grid-flow-col gap-2 mb-4'>
             <div className='text-gray-300'>New user?</div>
-            <div className='text-blue-300 transition duration-500 ease-in-out hover:text-blue-600 transform hover:-translate-y-1'>Create new account</div>
+            <div className='text-blue-300 transition duration-500 ease-in-out hover:text-blue-600 transform hover:-translate-y-1'>
+              Create new account
+            </div>
           </div>
         </div>
       </div>
@@ -24,7 +26,9 @@ function Login() {
         <div className='flex justify-center p-8'>
           <div className='flex justify-center grid grid-col-7 grid-flow-rows'>
             <div className='text-black text-5xl tracking-tight'>Log in</div>
-            <div className='text-black text-5xl tracking-tight'>to continue</div>
+            <div className='text-black text-5xl tracking-tight'>
+              to continue
+            </div>
 
             <label className='block mt-8'>
               <span className='block text-sm font-medium text-gray-300'>
@@ -56,14 +60,18 @@ function Login() {
                         focus:invalid:border-pink-500 focus:invalid:ring-pink-500
                         '
               />
-              <div className='flex justify-end text-gray-300 text-sm mt-2 transition duration-500 ease-in-out hover:text-blue-600 transform hover:-translate-y-1'>Forget password</div>
+              <div className='flex justify-end text-gray-300 text-sm mt-2 transition duration-500 ease-in-out hover:text-blue-600 transform hover:-translate-y-1'>
+                Forget password
+              </div>
             </label>
 
-            <div className='text-center pt-4'>
-              <button className='w-80 h-12 px-8 py-2 mx-auto text-white bg-indigo-500 rounded-md transition duration-500 ease-in-out hover:bg-indigo-600 transform hover:-translate-y-1'>
-                Log in
-              </button>
-            </div>
+            <Link to='/balance'>
+              <div className='text-center pt-4'>
+                <button className='w-80 h-12 px-8 py-2 mx-auto text-white bg-indigo-500 rounded-md transition duration-500 ease-in-out hover:bg-indigo-600 transform hover:-translate-y-1'>
+                  Log in
+                </button>
+              </div>
+            </Link>
 
             <div className=' grid grid-cols-3 divide-x p-4 divide-none'>
               <div className='divide-y divide-gray-200 pt-3'>

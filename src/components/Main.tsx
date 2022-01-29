@@ -1,5 +1,6 @@
 import React from 'react';
 import {HashRouter,Route,Routes} from "react-router-dom";
+import Balance from './Balance';
 import HomePage from './HomePage';
 import Login from './Login';
 import SplashScreen from './SplashScreen';
@@ -16,6 +17,7 @@ const App = ()=> {
         <Route path="/" element={<SplashScreen/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/home" element={<HomePage/>}/>
+        <Route path="/balance" element={<Balance/>}/>
       </Routes>     
     </HashRouter>    
   );

@@ -5,7 +5,7 @@ function Profile() {
   return (
     <>
       <div className='flex justify-start p-8'>
-        <Link to='/'>
+        <Link to='/balance'>
           <button className='px-8 py-2 mx-auto text-white bg-indigo-500 rounded-lg transition duration-500 ease-in-out hover:bg-indigo-600 transform hover:-translate-y-1'>
             BACK
           </button>

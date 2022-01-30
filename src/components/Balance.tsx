@@ -136,6 +136,7 @@ function Balance() {
           </div>
           <div className='flex justify-center'></div>
           <div className='divide-y divide-gray-200 pt-3'>
+            <Link to='/history'>
             <div className='flex justify-end text-semibold text-md text-blue-300 transition duration-500 ease-in-out hover:text-blue-600 transform hover:-translate-y-1'>
               See all
               <svg
@@ -153,6 +154,7 @@ function Balance() {
                 />
               </svg>
             </div>
+            </Link>
           </div>
         </div>
         <div className='grid grid-col-4 grid-flow-rows gap-5'>

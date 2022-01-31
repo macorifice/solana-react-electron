@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UserList from './UserList';
 
 function HomePage() {
   return (
@@ -10,7 +11,7 @@ function HomePage() {
         </button>
       </Link>
       <div className='flex justify-center md:container md:mx-auto p-8'>
-        HOME
+        <UserList />
       </div>
     </div>
   );

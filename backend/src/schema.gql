@@ -9,17 +9,97 @@ type User {
   isActive: Boolean!
 }
 
+type Account {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Transaction {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Instruction {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Program {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
 type Query {
   getUser(id: Int!): User!
   users: [User!]!
+  account(id: Int!): Account!
+  transaction(id: Int!): Transaction!
+  instruction(id: Int!): Instruction!
+  program(id: Int!): Program!
 }
 
 type Mutation {
   createUser(createUserInput: CreateUserInput!): User!
+  createAccount(createAccountInput: CreateAccountInput!): Account!
+  updateAccount(updateAccountInput: UpdateAccountInput!): Account!
+  removeAccount(id: Int!): Account!
+  createTransaction(createTransactionInput: CreateTransactionInput!): Transaction!
+  updateTransaction(updateTransactionInput: UpdateTransactionInput!): Transaction!
+  removeTransaction(id: Int!): Transaction!
+  createInstruction(createInstructionInput: CreateInstructionInput!): Instruction!
+  updateInstruction(updateInstructionInput: UpdateInstructionInput!): Instruction!
+  removeInstruction(id: Int!): Instruction!
+  createProgram(createProgramInput: CreateProgramInput!): Program!
+  updateProgram(updateProgramInput: UpdateProgramInput!): Program!
+  removeProgram(id: Int!): Program!
 }
 
 input CreateUserInput {
   firstName: String!
   lastName: String!
   isActive: Boolean!
+}
+
+input CreateAccountInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateAccountInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateTransactionInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateTransactionInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateInstructionInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateInstructionInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateProgramInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateProgramInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
 }

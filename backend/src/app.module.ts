@@ -5,6 +5,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { join } from 'path';
+import { AccountModule } from './account/account.module';
+import { TransactionModule } from './transaction/transaction.module';
+import { InstructionModule } from './instruction/instruction.module';
+import { ProgramModule } from './program/program.module';
 
 @Module({
   imports: [
@@ -17,7 +21,11 @@ import { join } from 'path';
       entities: ['dist/**/*.entity{.ts,.js}'],
       synchronize: true
     }),
-    UsersModule
+    UsersModule,
+    AccountModule,
+    TransactionModule,
+    InstructionModule,
+    ProgramModule
   ],
   controllers: [AppController],
   providers: [AppService],

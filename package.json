@@ -48,7 +48,7 @@
           "@electron-forge/plugin-webpack",
           {
             "mainConfig": "./webpack.main.config.js",
-            "devContentSecurityPolicy":"default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;",
+            "devContentSecurityPolicy": "default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;",
             "renderer": {
               "config": "./webpack.renderer.config.js",
               "entryPoints": [
@@ -72,6 +72,9 @@
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "@electron-forge/plugin-webpack": "^6.0.0-beta.63",
     "@graphql-codegen/cli": "2.4.0",
+    "@graphql-codegen/typescript": "2.4.2",
+    "@graphql-codegen/typescript-operations": "2.2.2",
+    "@graphql-codegen/typescript-react-apollo": "3.2.4",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/react-router": "^5.1.18",
@@ -91,14 +94,10 @@
     "tailwindcss": "^3.0.17",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
-    "url-loader": "^4.1.1",
-    "@graphql-codegen/typescript": "2.4.2",
-    "@graphql-codegen/typescript-react-apollo": "3.2.4",
-    "@graphql-codegen/typescript-operations": "2.2.2"
+    "url-loader": "^4.1.1"
   },
   "dependencies": {
     "@apollo/client": "^3.5.8",
-    "@solana/web3.js": "^1.32.0",
     "electron-squirrel-startup": "^1.0.0",
     "graphql": "^16.3.0",
     "postcss-loader": "^6.2.1",
